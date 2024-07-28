@@ -12,6 +12,7 @@ async function main() {
 }
 
 const iniData=async ()=>{
+  
     await Listing.deleteMany({});
     await Listing.insertMany(data1.data);
     
