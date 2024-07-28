@@ -10,6 +10,7 @@ const listingSchema= new schema({
     description:String,
     image:{ 
         filename:{
+        
             default:"img.jpg",
             type:String,
         },
