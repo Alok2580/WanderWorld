@@ -88,9 +88,10 @@ router.get("/",(req,res)=>{
     data=data[0];
     res.render("listings/edit.ejs",{data});
     }
+    
   }));
 
-  
+
   //update
   router.put("/:id",validateListing,wrapAsync(async(req,res)=>{
     let {id}=req.params;
