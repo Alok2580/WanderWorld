@@ -80,6 +80,7 @@ router.get("/",(req,res)=>{
   
     
   }));
+  
   router.get("/:id/edit",isLogged,wrapAsync(async(req,res)=>{
     let {id}=req.params;
     let data= await Listing.find({_id:id});
