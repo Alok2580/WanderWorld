@@ -89,6 +89,7 @@ router.get("/",(req,res)=>{
     res.render("listings/edit.ejs",{data});
     }
   }));
+
   
   //update
   router.put("/:id",validateListing,wrapAsync(async(req,res)=>{

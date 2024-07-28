@@ -16,6 +16,7 @@ router.post("/signup",wrapAsync(async(req,res)=>{
         const user1=new User({ username,email});
         let RegisteredUser= await User.register(user1,password); 
        
+        
         req.flash("super","User is Registered Succesfully");
         res.redirect("/listings");
     }
