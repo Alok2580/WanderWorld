@@ -5,6 +5,7 @@ class ExpressError extends Error{
         this.message=message;
     }
 
+    
 }
 
 module.exports=ExpressError;

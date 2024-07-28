@@ -6,6 +6,7 @@ const isLogged=(req,res,next)=>{
     {
         next();
     }
+    
 }
 
 module.exports=isLogged;

@@ -32,6 +32,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
+
 app.use(express.urlencoded({ extended: true }));
 var methodOverride = require('method-override');
 app.use(methodOverride('_method'));

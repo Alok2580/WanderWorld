@@ -15,6 +15,7 @@ const listingSchema= new schema({
             type:String,
         },
         url:{
+            
             type:String,
             default:"https://media.istockphoto.com/id/547516752/photo/coconut-palm-trees-on-white-sandy-beach.jpg?s=612x612&w=0&k=20&c=5fVUhFEoBBvy_nPT2xx67lqfyXLpzFzt91H0fgGOVE4=",
             set: function(value){

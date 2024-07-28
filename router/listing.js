@@ -80,7 +80,7 @@ router.get("/",(req,res)=>{
   
     
   }));
-  
+
   router.get("/:id/edit",isLogged,wrapAsync(async(req,res)=>{
     let {id}=req.params;
     let data= await Listing.find({_id:id});
@@ -89,6 +89,7 @@ router.get("/",(req,res)=>{
     res.render("listings/edit.ejs",{data});
     }
   }));
+  
   //update
   router.put("/:id",validateListing,wrapAsync(async(req,res)=>{
     let {id}=req.params;
