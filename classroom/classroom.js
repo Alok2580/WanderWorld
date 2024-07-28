@@ -14,6 +14,7 @@ const sessionOptions={
 
 app.use(session(sessionOptions));
 app.use(flash()); 
+
 app.get("/register",(req,res)=>{
     let {name}=req.query;
     req.session.name=name;
